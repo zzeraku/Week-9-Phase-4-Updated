@@ -62,7 +62,7 @@ def printuserinfo():
 def Login():
         # read login information and store in a list(create the list with a name followed by = [])
     ########## Write the line of code that will open the file Users.txt in read mode (Thats the "r" use in the open function)
-    UserFile = open("Users.txt","r")
+    UserFile = open("user.txt","r")
     
     UserList = []
     
