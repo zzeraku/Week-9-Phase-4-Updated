@@ -90,7 +90,7 @@ def GetEmpName():
     empname = input("Enter employee name: ")
     return empname
 def GetDatesWorked():
-    fromdate = input("Enter Start Date (mm/dd/yyyy: ")
+    fromdate = input("Enter Start Date (mm/dd/yyyy): ")
     todate = input("Enter End Date (mm/dd/yyyy: ")
     return fromdate, todate
 def GetHoursWorked():
@@ -182,12 +182,12 @@ if __name__ == "__main__":
     DetailsPrinted = False  ###
     EmpTotals = {} ###
     ########## Write the if statement that will check to see if UserRole is equal to NONE (NOTE: code will show red error lines until this line is written)
-    if (UserRole.upper() == "NONE"):
+    if (userrole.upper() == "NONE"):
         print(UserName," is invalid.")
     else:
     # only admin users can enter data
         ##### write the if statement that will check to see if the UserRole is equal to ADMIN (NOTE: code will show red error lines until this line is written)
-        if (UserRole.upper() == "ADMIN"):
+        if (userrole.upper() == "ADMIN"):
             EmpFile = open("Employees.txt", "a+")                
             while True:
                 empname = GetEmpName()
